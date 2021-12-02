@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi lista de libros</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .success, .error {
+            color: white;
+            padding: 15px;
+            margin: 5px 0 15px 0;
+        }
+
+        .success {
+            background-color: green;
+        }
+
+        .error{
+            background-color: red;
+        }
+
+        .lista-row:hover{
+            background-color: rgb(118, 128, 129);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Libros</h1>
+        <form id="book-form">
+            <div>
+                <label for="title">Titulo</label>
+                <input type="text" class="u-full-width" id="title">
+            </div>
+            <div>
+                <label for="autor">Autor</label>
+                <input type="text" class="u-full-width" id="autor">
+            </div>
+            <div>
+                <label for="isbn">ISBN</label>
+                <input type="text" class="u-full-width" id="isbn">
+            </div>
+            <div>
+                <input type="submit" value="Guardar" class="u-full-width">
+            </div>
+        </form>
+        <table class="u-full-width" id="tabla-lista">
+            <thead>
+                <tr>
+                    <th>Titulo</th>
+                    <th>Autor</th>
+                    <th>ISBN</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="book-list"> </tbody>
+        </table>
+    </div>
+    <script src="./js/class.js" ></script>
+</body>
+
+</html>
