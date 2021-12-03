@@ -1,0 +1,2 @@
+<h5>Este texto ha sido cargado de forma asíncrona con <b>AJAX</b>
+ usando el <b>API XmlHttpRequest</b>.</h5>

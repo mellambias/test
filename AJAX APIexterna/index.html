@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>AJAX</title>
+    <style>
+        .hide{
+            display: none;
+            visibility: none;
+        }
+        .show{
+            display: block;
+            visibility: visible;
+            border: 1px gray;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <br class="container">
+        <h1>API Lorem Picsum</h1>
+        <a href="https://picsum.photos/">picsum.photos</a>
+        <div>
+            <input id="gray" type="checkbox" value="grayscale"> Escala de grises
+        </div>
+        <div>
+            <input id="blur" type="checkbox" value="blur"> Blur
+            <input id="blurNumber" type="range" min=1 max=10 value=0>
+        </div>
+        <div>
+            Página: <input id="pagina" type="text" value=1 size=3>
+        </div>
+        
+        <div>
+            <button id="buttonImagenes">obtener imagenes</button>
+        </div>
+        
+        <hr>
+        <div id="showPreview" class="hide">
+
+        </div>
+        <div >
+            <table id="imagenes" class="u-full-width"></table>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
